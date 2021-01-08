@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hometask Lection 13</string>
+    <string name="number_text_view_initial_text">0</string>
+    <string name="wait_button_text">Wait</string>
 </resources>
