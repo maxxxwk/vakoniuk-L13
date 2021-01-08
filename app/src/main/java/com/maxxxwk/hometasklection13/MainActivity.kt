@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
         setupListeners()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        waitingExecutor.shutdown()
+    }
+
     private fun setupBinding() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
